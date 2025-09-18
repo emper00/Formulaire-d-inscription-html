@@ -1,0 +1,124 @@
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Livre de Philosophie</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
+    header {
+      background-color: #1e90ff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #1e90ff;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Livre de Philosophie</h1>
+</header>
+
+<section>
+  <h2>Chapitre 1 : Qu'est-ce que la philosophie ?</h2>
+  <p id="texte1">La philosophie est l'amour de la sagesse. Elle commence par l'étonnement et vise à comprendre l'existence humaine et le monde.</p>
+  <button onclick="lireTexte('texte1')">🔊 Écouter</button>
+</section>
+
+<section>
+  <h2>Chapitre 2 : Les grands penseurs</h2>
+[18/09, 15:34] ChatGPT: <p id="texte2">Des philosophes comme Socrate, Platon ou Kant ont marqué l'histoire par leurs réflexions profondes sur la vie, la morale et la vérité.</p>
+  <button onclick="lireTexte('texte2')">🔊 Écouter</button>
+</section>
+
+<section>
+  <h2>Chapitre 3 : La morale</h2>
+  <p id="texte3">La morale interroge la différence entre le bien et le mal. Elle guide nos actions et reflète nos valeurs personnelles ou collectives.</p>
+  <button onclick="lireTexte('texte3')">🔊 Écouter</button>
+</section>
+
+<section>
+  <h2>Chapitre 4 : La liberté</h2>
+  <p id="texte4">Être libre, c’est pouvoir choisir et agir sans contrainte. Mais cette liberté implique aussi responsabilité et respect de l’autre.</p>
+  <button onclick="lireTexte('texte4')">🔊 Écouter</button>
+</section>
+
+<section>
+  <h2>Chapitre 5 : La justice</h2>
+  <p id="texte5">La justice vise à établir l’équité entre les individus. Elle suppose des lois, des droits, mais aussi des devoirs partagés.</p>
+  <button onclick="lireTexte('texte5')">🔊 Écouter</button>
+</section>
+
+<section>
+  <h2>Chapitre 6 : Le bonheur</h2>
+  <p id="texte6">Le bonheur est un état de satisfaction durable. Pour les philosophes, il peut être lié à la vertu, à la raison ou au plaisir.</p>
+  <button onclick="lireTexte('texte6')">🔊 Écouter</button>
+</section>
+
+<section>
+[18/09, 15:34] ChatGPT: <h2>Chapitre 7 : La vérité</h2>
+  <p id="texte7">La vérité est ce qui correspond à la réalité ou à la logique. Elle est souvent difficile à atteindre, mais elle guide la pensée.</p>
+  <button onclick="lireTexte('texte7')">🔊 Écouter</button>
+</section>
+
+<section>
+  <h2>Chapitre 8 : Le temps</h2>
+  <p id="texte8">Le temps fascine les philosophes. Il structure notre vie, mais reste un mystère entre passé, présent et avenir.</p>
+  <button onclick="lireTexte('texte8')">🔊 Écouter</button>
+</section>
+
+<section>
+  <h2>Chapitre 9 : L’existence</h2>
+  <p id="texte9">L'existence questionne le sens de la vie, notre présence dans le monde, et la conscience de soi et des autres.</p>
+  <button onclick="lireTexte('texte9')">🔊 Écouter</button>
+</section>
+
+<section>
+  <h2>Chapitre 10 : La mort</h2>
+  <p id="texte10">La mort est la limite ultime de l’existence. Elle interroge le sens de la vie et nous pousse à réfléchir à ce qui compte vraiment.</p>
+  <button onclick="lireTexte('texte10')">🔊 Écouter</button>
+</section>
+
+<script>
+  function lireTexte(id) {
+    const texte = document.getElementById(id).innerText;
+    const synthese = window.speechSynthesis;
+    const voix = new SpeechSynthesisUtterance(texte);
+    voix.lang = 'fr-FR';
+    synthese.cancel();
+    synthese.speak(voix);
+  }
+</script>
+[18/09, 15:34] </body>
+</html>
+```
+
+Teste-le dans 
